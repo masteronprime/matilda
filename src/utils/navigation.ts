@@ -1,6 +1,6 @@
 // An array of links for navigation bar
 export const navBarLinks = [
-  { name: "Inicio", url: "/" }
+  { name: "Inicio" }
 ];
 // An array of links for footer
 export const footerLinks = [
@@ -19,11 +19,3 @@ export const footerLinks = [
     ],
   },
 ];
-// An object of links for social icons
-export const socialLinks = {
-  facebook: "#",
-  x: "#",
-  github: "#",
-  google: "#",
-  slack: "#",
-};
