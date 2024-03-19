@@ -1,0 +1,75 @@
+---
+// Define props from Astro
+const { title, subTitle } = Astro.props;
+
+// Define TypeScript interface for props
+interface Props {
+  title: string;
+  subTitle?: string;
+}
+---
+
+<section
+  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+>
+  <div class="lg:flex lg:flex-col lg:items-center lg:justify-center">
+    <h1
+      class="block items-center justify-center text-balance py-6 text-3xl font-bold tracking-tight text-neutral-800 hover:scale-105 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight"
+    >
+      Certificados
+    </h1>
+    <div class="m-auto justify-around lg:flex lg:flex-row">
+      <card
+        class="transform justify-center p-4 text-center shadow-lg transition-transform hover:scale-105 lg:mx-6 lg:rounded-lg lg:border-2 lg:border-green-700"
+      >
+        <img
+          src="/image/certificados/certificado_1.png"
+          class="hover:scale-110"
+        />
+        <h1
+          class="py-4 text-lg font-bold dark:text-neutral-200 lg:text-2xl lg:leading-tight"
+        >
+          FAIRTRADE MAX HAVELAAR
+        </h1>
+        <h2 class="dark:text-neutral-200">
+          Certificado de calidad Fitosanitario (control de sanidad de plantas y
+          suelos).
+        </h2>
+      </card>
+      <card
+        class="mx-6 transform justify-center rounded-lg p-4 text-center shadow-lg transition-transform hover:scale-105 lg:border-2 lg:border-green-700"
+      >
+        <img
+          src="/image/certificados/certificado_2.png"
+          class="hover:scale-110"
+        />
+        <h1
+          class="py-4 text-lg font-bold dark:text-neutral-200 lg:text-2xl lg:leading-tight"
+        >
+          GLOBAL G.A.P.
+        </h1>
+        <h2 class="dark:text-neutral-200">
+          Certificado de calidad Fitosanitario (control de sanidad de plantas y
+          suelos).
+        </h2>
+      </card>
+      <card
+        class="mx-6 transform justify-center rounded-lg p-4 text-center shadow-lg transition-transform hover:scale-105 lg:border-2 lg:border-green-700"
+      >
+        <img
+          src="/image/certificados/certificado_3.png"
+          class="hover:scale-110"
+        />
+        <h1
+          class="py-4 text-lg font-bold dark:text-neutral-200 lg:text-2xl lg:leading-tight"
+        >
+          SENASA PERU
+        </h1>
+        <h2 class="dark:text-neutral-200">
+          Certificado de calidad Fitosanitario (control de sanidad de plantas y
+          suelos).
+        </h2>
+      </card>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+const { title, btnId, btnTitle, url } = Astro.props;
+
+interface Props {
+  title?: string;
+  btnId: string;
+  btnTitle: string;
+  url: string;
+}
+---
+
+<script>
+  class AstroBanner extends HTMLElement {
+    connectedCallback() {
+      const btnId = this.getAttribute("btnId");
+      const button = this.querySelector(`#${btnId}`);
+      if (button != null) {
+        button.addEventListener("click", () => this.remove());
+      }
+    }
+  }
+
+  customElements.define("astro-banner", AstroBanner);
+</script>
